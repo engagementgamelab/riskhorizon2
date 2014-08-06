@@ -1,0 +1,9 @@
+-ActionScript and _Data folders contain the scripts that collect data on play sessions
+-Audio contains audio files and scripts
+-Backend contains the scripts for the backend
+-Editor contains a script used to combine scenes in Unity
+-GUI contains all textures and scripts associated with the GUI
+-Icons contains the images used for mobile icons
+-MiniGamecontains all textures and scripts associated with the "shock time" minigame
+-Scene contains textures and scripts used for the 'scene' (basically, the front end)
+-Tutorial2 contains the scene, textures, and scripts for the tutorial
