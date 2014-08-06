@@ -1,2 +1,2 @@
-riskhorizon2
+Risk Horizon
 ============
