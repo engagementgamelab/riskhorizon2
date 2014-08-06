@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 767c709d58c484d0ea96eabd20b91f22
+guid: 97c3d96d03b4d4c7d9153d519884af59
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -41,12 +41,8 @@ TextureImporter:
   alphaIsTransparency: 0
   textureType: 5
   buildTargetSettings:
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: 31
-    compressionQuality: 50
   - buildTarget: iPhone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     textureFormat: 31
     compressionQuality: 100
   spriteSheet:

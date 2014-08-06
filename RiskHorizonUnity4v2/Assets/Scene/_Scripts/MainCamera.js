@@ -52,9 +52,7 @@ class MainCamera extends MonoBehaviour {
 		res = new ScreenResolution (Screen.width, Screen.height);
 		fontContainer.OnSetScreenSize ();
 		cam = GetComponent (Camera);
-		cam.orthographicSize = res.CamHeight; //Screen.height / 2;
-		//camera.aspect = Screen.currentResolution.width / Screen.currentResolution.height;
-		//height = cam.orthographicSize;
+		cam.orthographicSize = res.CamHeight;
 		
 		top = 1.0;
 		bottom = -1.0;

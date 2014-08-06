@@ -8,7 +8,7 @@ class TelescopeDisplay extends GameSprite {
 	
 	function Start () {
 		InitGameSprite (5, -0.1);
-		myTransform.position = MainCamera.SetPositionV3 (-0.25 * MainCamera.scale, 0.0, Depth, true, true);
+		myTransform.position = MainCamera.SetPositionV3 (-0.5 * MainCamera.scale, 0.0, Depth, true, true);
 		//gameObject.SetActiveRecursively (false);
 	}
 	

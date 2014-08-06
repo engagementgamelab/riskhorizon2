@@ -1,6 +1,6 @@
-#pragma strict
+﻿#pragma strict
 
-class MiniGameOverlay extends GameSprite {
+class MiniGameOverlaySide extends GameSprite {
 	
 	function Start () {
 		InitGameSprite (6, 0.1);

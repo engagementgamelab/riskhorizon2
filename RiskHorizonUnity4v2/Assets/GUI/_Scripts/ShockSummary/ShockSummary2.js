@@ -35,7 +35,7 @@ class ShockSummary2 extends GUITextBox {
 		
 		scale = MainCamera.scale;
 	
-		var textRight : float = -0.85 * scale;
+		var textRight : float = -0.95 * scale;
 		CreateBackground ();
 		CreateText ("Level 1", new Vector2 (0.0, 0.725 * scale), TextSize.Large, TextAnchor.MiddleCenter, true, false);
 		CreateText ("Click on the meteors to learn!", new Vector2 (textRight, 0.6 * scale), TextSize.MediumSmall, TextAnchor.UpperLeft, true, false);
@@ -80,10 +80,10 @@ class ShockSummary2 extends GUITextBox {
 	}
 	
 	private function CreateButtons () {
-		var separation : float = MainCamera.GetDefaultHeight () * 2.0 * 0.31 * scale;
+		var separation : float = MainCamera.GetDefaultHeight () * 2.0 * 0.275 * scale;
 		var position : Vector2 = new Vector2 (0.0, MainCamera.GetDefaultHeight () * 2.0 * 0.433 * scale);
 		for (var i = 0; i < buttons.Length; i ++) {
-			position.x = (MainCamera.GetDefaultHeight () * 2.0 * -0.975 * scale) + (i * separation); 
+			position.x = (MainCamera.GetDefaultHeight () * 2.0 * -1.125/*-0.975*/ * scale) + (i * separation); 
 			buttons[i] = Instantiate (button);
 			buttons[i].Create (this, position);
 		}

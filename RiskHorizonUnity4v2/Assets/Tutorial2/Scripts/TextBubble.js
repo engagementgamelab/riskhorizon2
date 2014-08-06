@@ -128,12 +128,12 @@ class TextBubble extends GUITextBox {
 		
 		var scale : float = MainCamera.scale;
 		for (var i = 0; i < nextPositions.Length; i ++) {
-			nextPositions[i].x *= scale;
-			nextPositions[i].y *= scale;
+			nextPositions[i].x *= 2.0 * scale;
+			nextPositions[i].y *= 2.0 * scale;
 		}
 		
 		for (i = 0; i < lineLengths.Length; i ++) {
-			lineLengths[i] *= scale;
+			lineLengths[i] *= 2.0 * scale;
 		}
 	}
 	

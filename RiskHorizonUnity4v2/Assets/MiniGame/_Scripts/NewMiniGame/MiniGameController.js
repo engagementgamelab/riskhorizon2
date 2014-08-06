@@ -28,9 +28,11 @@ class MiniGameController extends PlotPositions {
 	
 	public function StartGame () {
 		lineDrawingScript.gameObject.SetActiveRecursively (true);
-		overlay.gameObject.SetActiveRecursively (true);
+		//overlay.gameObject.SetActiveRecursively (true);
+		overlay.SetOverlayActive (true);
 		createConnectorsCount = 2;
-		overlay.FadeIn (0.5);
+		//overlay.FadeIn (0.5);
+		overlay.FadeOverlayIn (0.5);
 		Open ();
 	}
 	
@@ -55,7 +57,8 @@ class MiniGameController extends PlotPositions {
 		Close (false);
 		clock.StopCountdown ();
 		clock.gameObject.SetActiveRecursively (false);
-		overlay.FadeOut (0.5);
+		//overlay.FadeOut (0.5);
+		overlay.FadeOverlayOut (0.5);
 		lineDrawingScript.gameObject.SetActiveRecursively (false);
 	}
 	

@@ -5,7 +5,7 @@ class BackgroundScreenshot extends GameSprite {
 	private var	level : int = 1;
 	
 	function Start () {
-		InitGameSprite (2);
+		InitGameSprite (0, 0.0);
 		Hide ();
 	}
 	

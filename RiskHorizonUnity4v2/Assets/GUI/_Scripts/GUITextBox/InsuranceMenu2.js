@@ -10,12 +10,13 @@ class InsuranceMenu2 extends GUITextBox {
 	private var resetOnOpen : boolean = false;
 	
 	function Awake () {
-		InitGTB (3);
+		//InitGTB (3);
 	}
 	
 	function Start () {
+		InitGTB (3, new Vector2 (0.0, 0.1));
 		var scale : float = MainCamera.scale;
-		var t : Vector2 = new Vector2 (-0.575, 0.45);
+		var t : Vector2 = new Vector2 (-0.575, 0.55);
 		t.x *= scale;
 		t.y *= scale;
 		CreateBackground ();
@@ -35,8 +36,8 @@ class InsuranceMenu2 extends GUITextBox {
 		var buttonX : float = 0.4 * scale;
 		var textX : float = -0.575 * scale;
 		for (var i = 0; i < 3; i ++) {
-			var y : float = (0.05 - (i * 0.35)) * scale;
-			var textY : float = (0.033 - (i * 0.195)) * scale;
+			var y : float = (0.25 - (i * 0.35)) * scale;
+			var textY : float = (0.133 - (i * 0.195)) * scale;
 			optionContainers[i] = Instantiate (optionContainer);
 			optionContainers[i].transform.parent = MyTransform;
 			optionContainers[i].Create (new Vector3 (buttonX, y, MyTransform.position.z), textX, textY, i, this);
