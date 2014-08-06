@@ -1,0 +1,14 @@
+# OS X only:
+.DS_Store
+RiskHorizonUnity4v2/*.swp
+RiskHorizonUnity4v2/*.Trashes
+ 
+# All platforms:
+RiskHorizonUnity4v2/Builds
+RiskHorizonUnity4v2/Library
+RiskHorizonUnity4v2/Temp
+RiskHorizonUnity4v2/*.csproj
+RiskHorizonUnity4v2/*.pidb
+RiskHorizonUnity4v2/*.unityproj
+RiskHorizonUnity4v2/*.sln
+RiskHorizonUnity4v2/*.userprefs
