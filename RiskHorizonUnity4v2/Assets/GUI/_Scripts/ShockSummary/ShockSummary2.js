@@ -44,21 +44,20 @@ class ShockSummary2 extends GUITextBox {
 		CreateButtons ();
 		CreateRetry ();
 		
-		var xFill : float = 0.13 * scale;
-		var ySep : float = -0.092 * 2.0 * scale;
-		var d : float = (((MainCamera.GetDefaultHeight () * 2.0) + 0.0) / (MainCamera.GetTargetHeight () + 0.0));
-		var yStart : float = 0.15 * d;
+		var xFill : float = 0.33 * scale;
+		var ySep : float = -0.108 * 2.0 * scale;
+		var yStart : float = 0.23 * 2.0 * scale;
 		severity = CreateFillBar (new Vector2 (xFill, yStart), 38, true, true);
 		chance = CreateFillBar (new Vector2 (xFill, yStart + (ySep * 1.0)), 38, true, true);
 		research = CreateFillBar (new Vector2 (xFill, yStart + (ySep * 2.0)), 38, true, true);
 		protection = CreateFillBar (new Vector2 (xFill, yStart + (ySep * 3.0)), 38, true, true);
 		
 		var xText : float = 0.45 * scale;
-		damage = CreateText ("0%", new Vector2 (xText, yStart + (ySep * 4.0)), TextSize.Medium, TextAnchor.MiddleRight, true, false);
-		insurance = CreateText ("None", new Vector2 (xText, yStart + (ySep * 5.0)), TextSize.Medium, TextAnchor.MiddleRight, true, false);
+		damage = CreateText ("0%", new Vector2 (xText, yStart + (ySep * 3.25)), TextSize.Medium, TextAnchor.MiddleRight, true, false);
+		insurance = CreateText ("None", new Vector2 (xText, yStart + (ySep * 3.75)), TextSize.Medium, TextAnchor.MiddleRight, true, false);
 		
-		taleTips = new TaleTips (MainCamera.GetDefaultHeight () * 2.0 * 1.67 * scale);
-		tips = CreateText ("Tales from the Alorian Insurance Salesman", new Vector2 (textRight, -0.5 * scale), TextSize.MediumSmall, TextAnchor.UpperLeft, true, false);
+		taleTips = new TaleTips (MainCamera.GetDefaultHeight () * 2.0 * 1.8 * scale);
+		tips = CreateText ("Tales from the Alorian Insurance Salesman", new Vector2 (textRight, -0.45 * scale), TextSize.MediumSmall, TextAnchor.UpperLeft, true, false);
 		winText = CreateText ("", new Vector2 (0.0, 0.0), TextSize.Medium, TextAnchor.MiddleCenter, true, false);
 		
 		Deactivate ();
@@ -111,10 +110,10 @@ class ShockSummary2 extends GUITextBox {
 		SetTextContent (4, taleTips.GetRandomTip (tips.MyGUIText));
 		
 		advance.Show ();
-		advance.SetAdvancePosition (new Vector2 (1.4 * scale, -1.4 * scale));
+		advance.SetAdvancePosition (new Vector2 (1.5 * scale, -1.4 * scale));
 		if (level > 1 && !won) {
 			retry.Show (won);
-			advance.SetAdvancePosition (new Vector2 (0.65 * scale, -0.7 * scale));
+			advance.SetAdvancePosition (new Vector2 (1.5 * scale, -1.4 * scale));
 		}
 		ShowButtons ();
 	}

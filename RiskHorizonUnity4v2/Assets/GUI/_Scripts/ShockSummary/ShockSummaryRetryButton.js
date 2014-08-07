@@ -10,12 +10,13 @@ class ShockSummaryRetryButton extends GameButton {
 	
 	public function Create (_summary : ShockSummary2) {
 		InitGameSprite (1, -0.1);
-		SpriteTransform.position = MainCamera.SetPositionV3 (0.65, -0.55, Depth, true, true);
-		if (UseSmallScreen ()) {
+		var scale : float = MainCamera.scale;
+		SpriteTransform.position = MainCamera.SetPositionV3 (1.5 * scale, -1.05 * scale, Depth, true, true);
+		//if (UseSmallScreen ()) {
 			buttons = small;
-		} else {
-			buttons = large;
-		}
+		//} else {
+		//	buttons = large;
+		//}
 		hotkey = KeyCode.Return;
 		summary = _summary;
 		SetTextures (buttons);

@@ -87,7 +87,7 @@ class TimeController extends MonoBehaviour {
 		GUI.Label (new Rect (20, 660, 200, 40), tScale);
 	}*/
 	
-	function Update () {
+	/*function Update () {
 		if (Input.GetKeyDown (KeyCode.Q)) {
 			timeScale = 40.0;
 			Messenger.instance.Send ("time scale set");
@@ -97,5 +97,5 @@ class TimeController extends MonoBehaviour {
 			timeScale = 1.0;
 			Messenger.instance.Send ("time scale set");
 		}
-	}
+	}*/
 }

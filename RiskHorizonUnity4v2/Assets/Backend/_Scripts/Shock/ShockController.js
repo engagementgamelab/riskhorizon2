@@ -342,7 +342,7 @@ class ShockController extends TimeScalable {
 		shockSummary2.Show (shockReports.GetReports (), won);
 	}
 	
-	function Update () {
+	/*function Update () {
 		if (Input.GetKeyDown (KeyCode.Z)) {
 			shockSummary2.Activate ();
 			shockSummary2.Show (
@@ -350,7 +350,7 @@ class ShockController extends TimeScalable {
 				(Mathf.RoundToInt (Random.Range (0, 2)) == 1)
 			);
 		}
-	}
+	}*/
 	
 	private function AppendArray (arr : int[], newVal : int) : int[] {
 		var newLength : int = arr.Length + 1;

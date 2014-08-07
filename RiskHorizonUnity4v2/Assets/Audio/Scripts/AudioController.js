@@ -10,8 +10,8 @@ class AudioController extends MonoBehaviour {
 	private var soundtracks : SoundEffect[];
 	private var effects : SoundEffect[];
 	
-	private var musicEnabled : boolean = false;
-	private var audioEnabled : boolean = false;
+	private var musicEnabled : boolean = true;
+	private var audioEnabled : boolean = true;
 	
 	private var protectionPing : PingingScale;
 	private var protection : float = 0.0;
