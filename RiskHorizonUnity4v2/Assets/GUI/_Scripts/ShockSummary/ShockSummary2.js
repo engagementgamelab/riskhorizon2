@@ -45,9 +45,9 @@ class ShockSummary2 extends GUITextBox {
 		CreateRetry ();
 		
 		var xFill : float = 0.13 * scale;
-		var ySep : float = -0.092 * scale;
+		var ySep : float = -0.092 * 2.0 * scale;
 		var d : float = (((MainCamera.GetDefaultHeight () * 2.0) + 0.0) / (MainCamera.GetTargetHeight () + 0.0));
-		var yStart : float = 0.15 * d * scale * scale;
+		var yStart : float = 0.15 * d;
 		severity = CreateFillBar (new Vector2 (xFill, yStart), 38, true, true);
 		chance = CreateFillBar (new Vector2 (xFill, yStart + (ySep * 1.0)), 38, true, true);
 		research = CreateFillBar (new Vector2 (xFill, yStart + (ySep * 2.0)), 38, true, true);
@@ -81,7 +81,7 @@ class ShockSummary2 extends GUITextBox {
 	
 	private function CreateButtons () {
 		var separation : float = MainCamera.GetDefaultHeight () * 2.0 * 0.275 * scale;
-		var position : Vector2 = new Vector2 (0.0, MainCamera.GetDefaultHeight () * 2.0 * 0.433 * scale);
+		var position : Vector2 = new Vector2 (0.0, MainCamera.GetDefaultHeight () * 2.0 * 0.5 * scale);
 		for (var i = 0; i < buttons.Length; i ++) {
 			position.x = (MainCamera.GetDefaultHeight () * 2.0 * -1.125/*-0.975*/ * scale) + (i * separation); 
 			buttons[i] = Instantiate (button);
@@ -111,7 +111,7 @@ class ShockSummary2 extends GUITextBox {
 		SetTextContent (4, taleTips.GetRandomTip (tips.MyGUIText));
 		
 		advance.Show ();
-		advance.SetAdvancePosition (new Vector2 (1.3 * scale, -1.4 * scale));
+		advance.SetAdvancePosition (new Vector2 (1.4 * scale, -1.4 * scale));
 		if (level > 1 && !won) {
 			retry.Show (won);
 			advance.SetAdvancePosition (new Vector2 (0.65 * scale, -0.7 * scale));

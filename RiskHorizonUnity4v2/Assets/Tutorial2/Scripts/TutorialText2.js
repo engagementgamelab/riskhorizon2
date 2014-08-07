@@ -99,9 +99,9 @@ class TutorialText2 extends MonoBehaviour {
 		textboxes[4] = new Textbox ("Upgrading", content[4], false, false, [false, true, true, true], 2, new Vector2 (0.19, 0.48));
 		textboxes[5] = new Textbox ("Grower Challenge", content[5], true, true, [true, true, true, true], 27, new Vector2 (-0.39, -0.35));
 		textboxes[6] = new Textbox ("View Comet", content[6], true, false, [true, true, true, false], 24, new Vector2 (0.54, 0.35));
-		textboxes[7] = new Textbox ("Severity", content[7], true, true, [true, true, true, true], 28, new Vector2 (-0.34, 0.33));
-		textboxes[8] = new Textbox ("Chance of Hit", content[8], true, true, [true, true, true, true], 28, new Vector2 (-0.34, 0.13));
-		textboxes[9] = new Textbox ("Research", content[9], true, true, [true, true, true, true], 28, new Vector2 (-0.34, -0.07));
+		textboxes[7] = new Textbox ("Severity", content[7], true, true, [true, true, true, true], 28, new Vector2 (-0.35, 0.33));
+		textboxes[8] = new Textbox ("Chance of Hit", content[8], true, true, [true, true, true, true], 28, new Vector2 (-0.35, 0.13));
+		textboxes[9] = new Textbox ("Research", content[9], true, true, [true, true, true, true], 28, new Vector2 (-0.35, -0.07));
 		textboxes[10] = new Textbox ("Shock Missed", content[10], true, true, [true, true, true, true], 27, new Vector2 (0.08, 0.66));
 		textboxes[11] = new Textbox ("Protection", content[11], true, false, [true, false, true, true], 8, new Vector2 (0.43, -0.25));
 		textboxes[12] = new Textbox ("Match Severity", content[12], true, true, [true, true, true, true], 28, new Vector2 (-0.34, 0.33));

@@ -9,11 +9,9 @@ class ShockCutscene extends MonoBehaviour {
 		for (var i = 0; i < parts.Length; i ++) {
 			parts[i] = Instantiate (parts[i]);
 			parts[i].Hide ();
-			//parts[i].gameObject.SetActiveRecursively (false);
 			parts[i].gameObject.SetActive (false);
 		}
 		text = Instantiate (text);
-		//text.gameObject.SetActiveRecursively (false);
 		text.gameObject.SetActive (false);
 	}
 	
@@ -24,7 +22,6 @@ class ShockCutscene extends MonoBehaviour {
 		
 		for (var i = 0; i < parts.Length; i ++) {
 			if (isDamaged) {
-				//parts[i].gameObject.SetActiveRecursively (true);
 				parts[i].gameObject.SetActive (true);
 				
 				// Back
@@ -52,14 +49,12 @@ class ShockCutscene extends MonoBehaviour {
 				
 			} else {
 				if (i > 2) break;
-				//parts[i].gameObject.SetActiveRecursively (true);
 				parts[i].gameObject.SetActive (true);
 				if (i == 0) parts[i].SetTexture (1);
 				parts[i].FadeIn (0.5);
 			}
 		}
 		
-		//text.gameObject.SetActiveRecursively (true);
 		text.gameObject.SetActive (true);
 		text.ShowText (severity, isDamaged);
 	}
@@ -71,7 +66,5 @@ class ShockCutscene extends MonoBehaviour {
 			}
 		}
 		text.FadeOut (0.5);
-		//yield WaitForSeconds (0.5);
-		//text.gameObject.SetActiveRecursively (false);
 	}
 }

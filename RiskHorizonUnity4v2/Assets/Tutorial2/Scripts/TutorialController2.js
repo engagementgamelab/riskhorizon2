@@ -570,14 +570,14 @@ class TutorialController2 extends MonoBehaviour {
 			p.y = MainCamera.ScreenToMyScreenY (clock.transform.position.y);
 			p.y += MainCamera.WorldToScreenY (height * 0.6 * scale);
 			p.x = MainCamera.ScreenToMyScreenX (clock.transform.position.x);
-			p.x += MainCamera.WorldToScreenX (width * 0.3);
+			p.x += MainCamera.WorldToScreenX (width * 0.3 * scale);
 		}
 		
 		if (ID == "Wealth") {
 			p.y = MainCamera.ScreenToMyScreenY (wealth.transform.position.y);
 			p.y += MainCamera.WorldToScreenY (height * 0.6 * scale);
 			p.x = MainCamera.ScreenToMyScreenX (wealth.transform.position.x);
-			p.x += MainCamera.WorldToScreenX (width * 0.3);
+			p.x += MainCamera.WorldToScreenX (width * 0.3 * scale);
 		}
 		
 		if (ID == "Severity" || ID == "Match Severity") {
@@ -597,13 +597,13 @@ class TutorialController2 extends MonoBehaviour {
 		}
 		
 		if (ID == "Protection" || ID == "Match Protection" || ID == "Mini Game Connections") {
-			p.x = MainCamera.WorldToScreenX (protection.transform.position.x - (width * 0.6 * scale));
-			p.y = MainCamera.WorldToScreenY (protection.transform.position.y + (width * 0.5 * scale));
+			p.x = MainCamera.WorldToScreenX (protection.transform.position.x - (width * 0.3 * scale));
+			p.y = MainCamera.WorldToScreenY (protection.transform.position.y + (width * 0.25 * scale));
 		}
 		
 		if (ID == "Insurance") {
-			p.x = MainCamera.WorldToScreenX (insurance.transform.position.x - (width * 0.45 * scale));
-			p.y = MainCamera.WorldToScreenY (insurance.transform.position.y + (width * 0.6 * scale));
+			p.x = MainCamera.WorldToScreenX (insurance.transform.position.x - (width * 0.225 * scale));
+			p.y = MainCamera.WorldToScreenY (insurance.transform.position.y + (width * 0.3 * scale));
 		}
 		
 		if (ID == "View Comet" || ID == "Impossible Shock") {

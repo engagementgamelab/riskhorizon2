@@ -12,7 +12,7 @@ class Wealth extends GameText {
 		Messenger.instance.Listen ("play cutscene", this);
 		Messenger.instance.Listen ("stop cutscene", this);
 		UpdateWealth ();
-		transform.position = MainCamera.SetPositionScreenSpaceV3 (-0.425, -0.825);
+		transform.position = MainCamera.SetPositionScreenSpaceV3 (-0.42, -0.825);
 		SetFont (FontContainer.instance.GetLarge ());
 		SetMaterial (FontContainer.instance.GetLargeWhite ());
 		if (GameController.instance.tutorialLevel) {

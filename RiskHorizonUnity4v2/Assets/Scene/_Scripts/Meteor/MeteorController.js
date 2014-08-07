@@ -15,7 +15,7 @@ class MeteorController extends MonoBehaviour {
 		var scale : float = MainCamera.scale;
 		var water : WaterOverlay = GameObject.Find ("WaterOverlay").GetComponent (WaterOverlay);
 		var screenHeight : float = MainCamera.GetTargetHeight ();
-		var top : float = ((water.WHeight * scale) + 0.0) / screenHeight;
+		var top : float = ((water.WHeight * 1.1 * scale) + 0.0) / screenHeight;
 		var buffer : float = ((meteorSprite.height * scale) + 0.0) / screenHeight;
 		horizon = (1.0 - top) + buffer;
 	}

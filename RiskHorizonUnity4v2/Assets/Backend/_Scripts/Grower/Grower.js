@@ -99,7 +99,7 @@ class Grower extends TimeScalable {
 			var bc : float[] = ArrayCurve (1.25, versionCount, WealthController.WealthValue (0.85));
 			for (var i = 0; i < bc.Length; i ++) {
 				buildCosts[i] = Mathf.RoundToInt (bc[i]);
-				buildCosts[i] = 1; //Debugging
+				//buildCosts[i] = 1; //Debugging
 			}
 			buildCosts[0] = WealthController.WealthValue (0.2);
 		}
@@ -110,7 +110,7 @@ class Grower extends TimeScalable {
 			/*for (var i = 0; i < buildTimes.Length; i ++) {
 				Debug.Log (buildTimes [i]);
 			}*/
-			buildTimes = [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]; //Debugging
+			//buildTimes = [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]; //Debugging
 		}
 		
 		private function ArrayCurve (pow : float, length : int) : float [] {

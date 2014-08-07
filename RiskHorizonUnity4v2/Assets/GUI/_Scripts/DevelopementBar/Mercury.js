@@ -42,8 +42,8 @@ class Mercury extends GameSprite {
 		
 		if (UseSmallScreen () && texturesSmall.Length > 0) {
 			renderer.material.SetTexture ("_MainTex", texturesSmall[0]);
-			SpriteTransform.localScale.x = 124;//590;
-			SpriteTransform.localScale.y = 900;//516;
+			SpriteTransform.localScale.x = 124;
+			SpriteTransform.localScale.y = 900;
 		} else {
 			SpriteTransform.localScale.x = 56;
 			SpriteTransform.localScale.y = 455;

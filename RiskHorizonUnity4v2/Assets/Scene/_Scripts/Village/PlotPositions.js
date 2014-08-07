@@ -24,18 +24,18 @@ class PlotPositions extends Scalable {
 		var defaultWidth : float = GameSprite.defaultDimensions.x * scale;
 		var defaultHeight : float = GameSprite.defaultDimensions.y * scale;
 		
-		var offset : Vector2 = new Vector2 (0.21 * scale, 0.16 * scale);
-		offset.x = Mathf.Min (0.105, offset.x);
+		var offset : Vector2 = new Vector2 (0.105, 0.08);//new Vector2 (0.21 * scale, 0.16 * scale);
+		/*offset.x = Mathf.Min (0.105, offset.x);
 		offset.y = Mathf.Min (0.08, offset.y);
+		offset.x = 0.105;
+		offset.y = 0.08;*/
 		var p : Vector3 = MainCamera.AnchorLowerRight (
 			defaultWidth - ((defaultWidth + 0.0) * offset.x), 
 			defaultHeight - ((defaultHeight + 0.0) * offset.y), 
 			0.0
 		);
 		
-		center = p;//MainCamera.SetPosition ((0.5 * width * 0.5) - 0.02, -0.12, false);
-		//var yOffset : float = p.y; //(MainCamera.GetTargetHeight () - defaultHeight) * -0.5;
-		//center.y += yOffset;
+		center = p;
 		OnStart ();
 		ScalePositions ();
 		OffsetYPositions (p);
